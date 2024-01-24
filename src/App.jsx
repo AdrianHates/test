@@ -40,7 +40,7 @@ function App() {
       <Navbar array={navbar} />
       <Routes>
             
-            <Route exact path="/" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/video/:id" element={<VideoDetails />} />
           
             <Route path='*' element={<NoMatch />} />  
