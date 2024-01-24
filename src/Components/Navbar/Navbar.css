@@ -1,0 +1,19 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-color: #dd3333;
+  width: 100%;
+  color: white;
+  padding: 0 7rem;
+  > div {
+    padding: 1rem;
+    font-family: 'Lato', Arial, sans-serif;    
+    font-size: .75rem;
+    font-weight: 550;
+    line-height: 1.5;
+    &:hover {
+      background-color: rgb(170, 85, 85)
+    }
+  }
+}

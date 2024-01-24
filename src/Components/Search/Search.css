@@ -1,0 +1,41 @@
+.search {
+  display: flex;
+  background-color: black;
+  padding: 1rem 7rem;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  & > div:first-of-type {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > input {
+      border: none;
+      padding: .5rem;
+      background-color: var(--c-white-1);
+      transition: outline .75s ease;
+      outline: 1px solid transparent;
+    }
+    & > input:focus::placeholder {
+      color:transparent;
+    }
+    & > input:focus {
+      outline: 1px solid gray;
+      border: none;
+
+    }
+    & > svg {
+      position: absolute;
+      right: 100%;
+      margin-right: .5rem;
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+  > div:nth-of-type(2) {
+    > svg {
+      height: 15px;
+      width: 15px;
+    }
+  }
+}
